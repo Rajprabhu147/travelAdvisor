@@ -19,7 +19,7 @@ const App = () => {
   // const [currentWeatherData, setCurrentWeatherData] = useState([]);
 
   const [childClicked, setChildClicked] = useState(null);
-  const [autocomplete, setAutocomplete] = useState(null);
+  // const [autocomplete, setAutocomplete] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -48,14 +48,14 @@ const App = () => {
     }
   }, [type, coordinates, bounds]);
 
-  const onLoad = (autoC) => setAutocomplete(autoC);
+  // const onLoad = (autoC) => setAutocomplete(autoC);
 
-  const onPlaceChanged = () => {
-    const lat = autocomplete.getPlace().geometry.location.lat();
-    const lng = autocomplete.getPlace().geometry.location.lng();
+  // const onPlaceChanged = () => {
+  //     const lat = autocomplete.getPlace().geometry.location.lat();
+  //     const lng = autocomplete.getPlace().geometry.location.lng();
 
-    setCoordinates({ lat, lng });
-  };
+  //     setCoordinates({lat, lng});
+  // }
 
   return (
     <>
