@@ -4,7 +4,7 @@ import { Paper, Typography, useMediaQuery } from "@material-ui/core";
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import Rating from "@material-ui/lab/Rating";
 
-import mapStyles from "../../mapStyles";
+import mapStyles from "../Map/mapStyles.js";
 import useStyles from "./styles.js";
 
 const Map = ({
